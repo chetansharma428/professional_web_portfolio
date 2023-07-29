@@ -1,0 +1,273 @@
+#navbar_top {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.nav-item {
+    color: cyan;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+}
+
+.half {
+    color: cyan;
+    font-family: 'Fira Code', monospace;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.btn{
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  outline: 2px #42D6CA solid;
+  outline-offset: -3px;
+  color: cyan;
+  transition: 0.3s;
+}
+.btn:hover{
+  outline-offset: 3px;
+  background-color: #42D6CA;
+  color: #111;
+}
+// logo part
+$letters-timing-function: cubic-bezier(.39, .24, 0, 1);
+$lines-timing-function: $letters-timing-function;
+
+* {
+  box-sizing: border-box;
+}
+@keyframes lines {
+    0%, 15% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    
+    40% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    
+    50%, 100% {
+      transform: rotate(90deg);
+    }
+    
+    80% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes meteor-left {
+    0% {
+      transform: rotate(45deg) translateX(-200px);
+      opacity: 0;
+    }
+    
+    15% {
+      opacity: 0.6;
+    }
+    
+    25% {
+      opacity: 0.6;
+    }
+    
+    35% {
+      opacity: 0;
+    }
+    
+    50%, 100% {
+      transform: rotate(45deg) translateX(600px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes meteor-right {
+    0% {
+      transform: rotate(-45deg) translateX(200px);
+      opacity: 0;
+    }
+    
+    15% {
+      opacity: 0.6;
+    }
+    
+    25% {
+      opacity: 0.6;
+    }
+    
+    35% {
+      opacity: 0;
+    }
+    
+    50%, 100% {
+      transform: rotate(-45deg) translateX(-600px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes letters {
+    0%, 40% {
+      clip-path: polygon(0 0, 0 0, 50% 50%, 100% 0, 100% 0, 50% 50%, 100% 100%, 100% 100%, 50% 50%, 0 100%, 0 100%, 50% 50%);
+    }
+    
+    50%, 100% {
+      clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 0, 100% 100%, 50% 50%, 100% 100%, 0 100%, 50% 50%, 0 100%, 0 0, 50% 50%);
+    }
+    
+    80% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  body {
+    background: #111;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+   
+  .canvas {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 0%;
+    // right: 0;
+    bottom: 0;
+    // left: 0;
+    margin:auto;
+    opacity: .9;
+    cursor: pointer;
+  }
+  
+  .lines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    animation: lines 10s ease $lines-timing-function;
+  }
+  
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+  }
+  
+  .line--left {
+    transform: rotate(45deg);
+  }
+  
+  .line--right {
+    transform: rotate(-45deg);
+  }
+  
+  .letters {
+    animation: letters 10s ease $letters-timing-function;
+    height: 100%;
+  }
+  
+  .letter {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .letter--k {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  .letter--o {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Styles for Small Screens (up to 576px) */
+@media (max-width: 576px) {
+  .letter {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .canvas {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    top: 0%;
+    bottom: 0;
+    margin:auto;
+    opacity: .9;
+    cursor: pointer;
+  }
+  .nav-item {
+    color: cyan;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+/* Styles for Medium Screens (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .letter {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .canvas {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    top: 0%;
+    bottom: 0;
+    margin:auto;
+    opacity: .9;
+    cursor: pointer;
+  }
+  .nav-item {
+    color: cyan;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+/* Styles for Large Screens (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+}
+
+/* Styles for Extra Large Screens (992px and above) */
+@media (min-width: 992px) {
+ 
+}
+
+/* Additional Styles for Specific Screen Sizes */
+/* For example, you can add more media queries for larger screens */
+@media (min-width: 1200px) {
+  
+}

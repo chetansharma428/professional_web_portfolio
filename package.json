@@ -18,6 +18,12 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^14.0.1",
+    "angular-bootstrap": "^0.12.2",
+    "angular-canvas": "^0.3.0",
+    "angular-popper": "^2.0.1",
+    "bootstrap": "^5.2.3",
+    "ngx-bootstrap-navbar": "^14.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

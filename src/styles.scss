@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+:root {
+    overflow: scroll;
+}
+* {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+    width: -webkit-fill-available;
+}
+

@@ -1,0 +1,48 @@
+.section{
+    height: 50vh;
+}
+.header{
+    color: cyan;
+}
+.btn{
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    outline: 2px #42D6CA solid;
+    outline-offset: -3px;
+    color: cyan;
+    transition: 0.3s;
+  }
+  .btn:hover{
+    outline-offset: 3px;
+    background-color: #42D6CA;
+    color: #111;
+  }
+  /* Styles for Small Screens (up to 576px) */
+@media (max-width: 576px) {
+   
+}
+
+/* Styles for Medium Screens (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}
+
+/* Styles for Large Screens (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+}
+
+/* Styles for Extra Large Screens (992px and above) */
+@media (min-width: 992px) {
+ 
+}
+
+/* Additional Styles for Specific Screen Sizes */
+/* For example, you can add more media queries for larger screens */
+@media (min-width: 1200px) {
+  
+}
