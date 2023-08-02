@@ -203,8 +203,8 @@ html {
     grid-row: 1 / -1;
     filter: gray; /* IE5+ */
       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      transition: all .8s ease-in-out; 
-  
+      transition: all .5s ease-in-out; 
+    cursor: pointer;
     @media screen and (max-width: 768px) {
       height: 100%;
     }
@@ -231,10 +231,6 @@ html {
     img {
       border-radius: 2px;
       position: relative;
-      mix-blend-mode: multiply;
-    //   filter: grayscale(100%) contrast(1) brightness(90%);
-    //   transition: all 0.8s ease-in-out;
-       
       @media screen and (max-width: 768px) {
         object-fit: cover;
         width: auto;
@@ -253,7 +249,7 @@ html {
     filter: gray; /* IE5+ */
       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
       transition: all .8s ease-in-out;
-  
+    cursor: pointer;
     @media screen and (max-width: 768px) {
       height: 100%;
     }
@@ -280,9 +276,6 @@ html {
     img {
       border-radius: 2px;
       position: relative;
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
-       
       @media screen and (max-width: 768px) {
         object-fit: cover;
         width: auto;

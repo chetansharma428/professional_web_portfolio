@@ -19,12 +19,54 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
     <div class="section" [ngClass]="{ 'show': showMainContent }" [@fadeInOut]>    
-        <app-navbar></app-navbar>
-        <app-hero></app-hero>
-        <app-about></app-about>
-        <app-who></app-who>
-        <app-work></app-work>
-        <app-contact></app-contact>
+        <nav id="navbar_top" class=" navbar fixed-top navbar-expand-lg my-2 mx-4">
+            <div class="col d-flex justify-content-space-around" (click)="inview(item5)">
+                <!-- <button class="bg-transparent border-0"> -->
+                    <!-- <div class="navbar-brand me-2 d-flex flex-row align-items-center justify-content-end" href="#">    -->
+                        <div class="canvas-logo">
+                            <div class="lines-logo">
+                                <div class="line-logo line-logo--left"></div>
+                                <div class="line-logo line-logo--right"></div>
+                            </div>
+                            <div class="letters-logo">
+                                <div class="letter-logo letter-logo-C">C</div>
+                                <div class="letter-logo letter-logo-S">S</div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                <!-- </button> -->
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="d-flex justify-content-end">
+                <div class="navbar-collapse collapse" id="#navbarSupportedContent" [ngbCollapse]="!isCollapsed">
+                    <div class="nav navbar-nav">
+                        <a class="nav-item nav-link me-4" (click)="inview(item1)" >About</a>
+                        <a class="nav-item nav-link me-4"(click)="inview(item2)">Experience</a>
+                        <a class="nav-item nav-link me-4"(click)="inview(item3)">Projects</a>
+                        <a class="nav-item nav-link me-4"(click)="inview(item4)">Contact</a>
+                    </div>
+                    <button class="btn resume" (click)="downloadResume()">Resume</button>
+                </div>
+            </div>
+    </nav>
+        <!-- <app-navbar></app-navbar> -->
+        <div #item5>
+            <app-hero></app-hero>
+        </div>
+        <div #item1>
+            <app-about></app-about>
+        </div>
+        <div #item2>
+            <app-who></app-who>
+        </div>
+        <div #item3>
+            <app-work></app-work>
+        </div>
+        <div #item4>
+            <app-contact></app-contact>
+        </div>
         <app-footer></app-footer>
     </div>
 </div>
