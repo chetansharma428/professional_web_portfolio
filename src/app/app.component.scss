@@ -658,7 +658,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  animation: lines 10s ease $lines-timing-function;
+  animation: lines 11s ease $lines-timing-function;
 }
 
 .line-logo {
@@ -755,45 +755,4 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
-}
-
-/* Styles for Large Screens (768px - 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-/* Styles for Extra Large Screens (992px and above) */
-@media (min-width: 992px) {
-
-}
-
-/* Additional Styles for Specific Screen Sizes */
-/* For example, you can add more media queries for larger screens */
-@media (min-width: 1200px) {
-
-}
-/* Styles for Small Screens (up to 576px) */
-@media (max-width: 576px) {
-   
-}
-
-/* Styles for Medium Screens (576px - 768px) */
-@media (min-width: 576px) and (max-width: 768px) {
- 
-}
-
-/* Styles for Large Screens (768px - 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
- 
-}
-
-/* Styles for Extra Large Screens (992px and above) */
-@media (min-width: 992px) {
- 
-}
-
-/* Additional Styles for Specific Screen Sizes */
-/* For example, you can add more media queries for larger screens */
-@media (min-width: 1200px) {
-  
 }

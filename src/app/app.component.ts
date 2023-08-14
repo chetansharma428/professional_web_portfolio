@@ -38,10 +38,10 @@ export class AppComponent {
     // Show the main content after a delay (e.g., 2 seconds)
     setTimeout(() => {
       this.showMainContent = true;
-    }, 6000); // Adjust the delay (in milliseconds) to your preference
+    }, 5000); // Adjust the delay (in milliseconds) to your preference
     setTimeout(() => {
       this.showLogoContent = false;
-    }, 8000); // Adjust the delay (in milliseconds) to your preference
+    }, 5000); // Adjust the delay (in milliseconds) to your preference
   }
   constructor(@Inject(DOCUMENT) private document: Document) { }
   isCollapsed = false;

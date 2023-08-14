@@ -57,7 +57,35 @@ html {
     max-width: 100%;
     vertical-align: middle;
   }
-  
+  .project-tech-list{
+    color: cyan;
+  }
+  .project-links{
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-left: 0px;
+    margin-right: -10px;
+    padding: 10px;
+    img{
+      width: 25px;
+      height: 25px;
+      color: white
+    }
+    img:hover{
+      color: aqua;
+    }
+    svg{
+      width: 25px;
+      height: 25px;
+      fill: none;
+    }
+    svg:hover{
+      color: aqua;
+    }
+    a{
+      padding: 10px;
+    }
+  }
   @mixin outline {
     outline: 1px solid red;
   }
@@ -119,18 +147,21 @@ html {
     .project-details {
       font-size: 15px;
       line-height: 1.5;
-      color: #aaa;
+      color: white;
       position: relative;
       z-index: 5;
-  
-      p {
-        background-color: #252525;
-        padding: 20px 25px;
-        @include tablet {
-          background-color: transparent;
-          padding: 20px 0;
-        }
-      }
+      
+
+p {
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 25px;
+  @include tablet {
+    background: transparent;
+    padding: 20px 0;
+  }
+}
   
       ul {
         display: flex;
@@ -168,15 +199,17 @@ html {
     .project-details {
       font-size: 15px;
       line-height: 1.5;
-      color: #aaa;
+      color: white;
       position: relative;
       z-index: 5;
   
       p {
-        background-color: #252525;
+        background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding: 20px 25px;
         @include tablet {
-          background-color: transparent;
+          background: transparent;
           padding: 20px 0;
         }
       }
