@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhoComponent } from './who.component';
+import { MyJourneyComponent } from './myJourney.component';
 
-describe('WhoComponent', () => {
-  let component: WhoComponent;
-  let fixture: ComponentFixture<WhoComponent>;
+describe('MyJourneyComponent', () => {
+  let component: MyJourneyComponent;
+  let fixture: ComponentFixture<MyJourneyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhoComponent ]
+      declarations: [ MyJourneyComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WhoComponent);
+    fixture = TestBed.createComponent(MyJourneyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

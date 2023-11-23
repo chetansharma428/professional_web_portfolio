@@ -3,10 +3,10 @@ import { DOCUMENT } from '@angular/common';
 import { Inject } from '@angular/core';
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavbarComponent {
+export class HeaderComponent {
   constructor(@Inject(DOCUMENT) private document: Document) { }
   isCollapsed = false;
   isCategories = false;

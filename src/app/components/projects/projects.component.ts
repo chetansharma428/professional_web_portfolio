@@ -3,10 +3,10 @@ import { DOCUMENT } from '@angular/common';
 import { Inject } from '@angular/core';
 @Component({
   selector: 'app-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class WorkComponent {
+export class ProjectsComponent {
   constructor(@Inject(DOCUMENT) private document: Document) { }
   projectLink(ele:any){
     if(ele==='GlamourRise')

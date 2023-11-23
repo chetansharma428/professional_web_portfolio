@@ -5,24 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 import{ NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { HeroComponent } from './components/hero/hero.component';
+import { HomePageComponent } from './components/homePage/homePage.component';
 import { AboutComponent } from './components/about/about.component';
-import { WhoComponent } from './components/who/who.component';
-import { WorkComponent } from './components/work/work.component';
+import { MyJourneyComponent } from './components/myJourney/myJourney.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroComponent,
+    HomePageComponent,
     AboutComponent,
-    WhoComponent,
-    WorkComponent,
+    MyJourneyComponent,
+    ProjectsComponent,
     ContactComponent,
-    NavbarComponent,
+    HeaderComponent,
     FooterComponent,
     SkillsComponent
   ],
