@@ -12,19 +12,19 @@ import { Inject } from '@angular/core';
     trigger('fadeInOut', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate('1s ease-in-out', style({ opacity: 1 })),
+        animate('0s ease-in-out', style({ opacity: 1 })),
       ]),
       transition(':leave', [
-        animate('1s ease-in-out', style({ opacity: 0 })),
+        animate('0s ease-in-out', style({ opacity: 0 })),
       ]),
     ]),
    trigger('fadeOut', [
       transition(':enter', [
         style({ opacity: 1}),
-        animate('1s ease-in-out', style({ opacity: 1 })),
+        animate('0s ease-in-out', style({ opacity: 1 })),
       ]),
       transition(':leave', [
-        animate('1s ease-in-out', style({ opacity: 0 })),
+        animate('0s ease-in-out', style({ opacity: 0 })),
       ]),
     ]),
   ]
@@ -38,10 +38,10 @@ export class AppComponent {
     // Show the main content after a delay (e.g., 2 seconds)
     setTimeout(() => {
       this.showMainContent = true;
-    }, 5000); // Adjust the delay (in milliseconds) to your preference
+    }, 0); // Adjust the delay (in milliseconds) to your preference
     setTimeout(() => {
       this.showLogoContent = false;
-    }, 5000); // Adjust the delay (in milliseconds) to your preference
+    }, 0); // Adjust the delay (in milliseconds) to your preference
   }
   constructor(@Inject(DOCUMENT) private document: Document) { }
   isCollapsed = false;

@@ -1,6 +1,6 @@
 <div class="container-fluid" id="shooting_star">
     <div class="logo" [ngClass]="{ 'in': showLogoContent }" [@fadeOut]>
-        <div class="meteors">
+        <!-- <div class="meteors">
             <div class="meteor meteor--left"></div>
             <div class="meteor meteor--right"></div>
         </div>
@@ -13,7 +13,7 @@
                 <div class="letter letter--k">C</div>
                 <div class="letter letter--o">S</div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div id='stars'></div>
     <div id='stars2'></div>
@@ -45,7 +45,8 @@
                         <a class="nav-item nav-link me-4" (click)="inview(item1)" >About</a>
                         <a class="nav-item nav-link me-4"(click)="inview(item2)">Experience</a>
                         <a class="nav-item nav-link me-4"(click)="inview(item3)">Projects</a>
-                        <a class="nav-item nav-link me-4"(click)="inview(item4)">Contact</a>
+                        <a class="nav-item nav-link me-4"(click)="inview(item4)">Skills</a>
+                        <a class="nav-item nav-link me-4"(click)="inview(item5)">Contact</a>
                     </div>
                     <button class="btn resume" (click)="downloadResume()">Resume</button>
                 </div>
@@ -65,6 +66,9 @@
             <app-work></app-work>
         </div>
         <div #item4>
+            <app-skills></app-skills>
+        </div>
+        <div #item5>
             <app-contact></app-contact>
         </div>
         <app-footer></app-footer>

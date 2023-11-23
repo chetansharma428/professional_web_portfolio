@@ -13,7 +13,6 @@
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden; 
-    font-family: 'Fira Code', monospace;
 }
 #stars {
     width: 1px;
@@ -273,7 +272,7 @@
     }
 
     to {
-        transform: translateY(-2000px);
+        transform: translateY(-2500px);
     }
 }
 
@@ -651,15 +650,15 @@ body {
   cursor: pointer;
 }
 
-.lines-logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  animation: lines 11s ease $lines-timing-function;
-}
+// .lines-logo {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   animation: lines 11s ease $lines-timing-function;
+// }
 
 .line-logo {
   position: absolute;

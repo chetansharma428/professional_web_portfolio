@@ -1,6 +1,5 @@
 .container{
     color: white;
-    font-family: 'Fira Code', monospace;
     min-height: 100vh;
 }
 .profile img{
@@ -19,7 +18,11 @@
 .about-header{
     color: cyan;
 }
-
+a{
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    color: aqua;
+}
 /* Styles for Small Screens (up to 576px) */
 @media (max-width: 576px) {
     .about-header{
@@ -50,12 +53,21 @@
 
 /* Styles for Large Screens (768px - 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
- 
+    .dis{
+        font-size: 1rem;
+        // text-align: center;
+        font-family: 'Red Hat Display', sans-serif;
+    }
 }
 
 /* Styles for Extra Large Screens (992px and above) */
 @media (min-width: 992px) {
- 
+    .dis{
+        font-size: 1rem;
+        // text-align: center;
+        padding-bottom: 2rem;
+        font-family: 'Red Hat Display', sans-serif;
+    }
 }
 
 /* Additional Styles for Specific Screen Sizes */

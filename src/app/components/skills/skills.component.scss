@@ -1,9 +1,5 @@
-a{
-  text-decoration: none;
-  color: cyan;
-}
-a:hover{
-  color: rgb(9, 163, 163);
+.section{
+    height: 100vh;
 }
 .stepper {
     .line {
@@ -17,10 +13,26 @@ a:hover{
   .header{
     color: cyan
   }
-  .tech{
-    color: cyan;
+  .box{
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 1rem;
+    border-radius: 5px;
   }
-  
+  img{
+    height: 48px;
+    width: 48px;
+  }
+  p{
+    display:inline-block;
+    color: white;
+    font-family: system, -apple-system, BlinkMacSystemFont, Roboto,
+      "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    
+  }
+  .head-text{
+    color: wheat;
+  }
   /* Styles for Small Screens (up to 576px) */
 @media (max-width: 576px) {
    
