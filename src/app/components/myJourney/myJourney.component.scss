@@ -21,6 +21,10 @@ a:hover{
     color: cyan;
   }
   
+img{
+  height: 20px;
+  filter: invert(80%);
+}
   /* Styles for Small Screens (up to 576px) */
 @media (max-width: 576px) {
    

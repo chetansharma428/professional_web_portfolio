@@ -6,8 +6,8 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    // filter: gray; /* IE5+ */
+    //   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
       transition: all .8s ease-in-out;  
 }
 .profile img:hover{
